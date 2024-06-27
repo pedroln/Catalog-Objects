@@ -27,6 +27,13 @@ Bibliotecas, aplicações e frameworks utilizados:
 
 - Para rodar o projeto, primeiramente geraremos a imagem do Front-End e do Back-End para que o docker consiga rodá-lo:
 
+- Antes de montarmos a imagem do Back-End, precisamos rodar o comando de build no Spring Boot para gerarmos a pasta Target com seu .jar, para isto, vamos navegar para a pasta Back-End e utilizar o seguinte comando:
+  <blockquote>
+     
+  "mvn clean package --% -Dmaven.test.skip"
+     
+  </blockquote>
+  
 - Para montar a imagem do Back-End, navegue para a pasta Back-End e utilize o seguinte comando:
    <blockquote>
      
