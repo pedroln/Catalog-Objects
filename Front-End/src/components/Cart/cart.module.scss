@@ -1,0 +1,99 @@
+.cart {
+    padding: 1rem;
+    margin-top: 15rem;
+    width: 100%;
+
+    .containerInfos {
+        display: flex;
+        flex-direction: row;
+        margin-left: 20%;
+        
+    }
+
+    .containerPersonalInfo{
+        display:flex;
+        gap: 5px;
+    }
+
+    .inputs{
+        border-color: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+
+    .infoBox{
+        gap:20px;
+    }
+
+    .stack{
+        width:100%;
+    }
+
+    .containerPayment {
+        gap:5px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        border-radius: 5px;
+        padding: .3rem .5rem;
+        padding-bottom:20px;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .containerObjects {
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        border-radius: 5px;
+        display: flex;
+        width: 40%;
+        margin-left: 35%;
+        flex-direction: column;
+        position:fixed;
+
+        button {
+            background-color: #213547;
+            width: 13rem;
+            padding: .5rem;
+            font-size: 1.1em;
+            margin-top:5px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            border-color: #213547;
+            border-style: solid;
+            border-width: 1px;
+            margin-left: 72%;
+            
+    
+            &:hover:not([disabled]) {
+              background-color: #eecf1d;
+              cursor: pointer;
+            }
+    
+            &:disabled {
+              opacity: .5;
+              background-color: lightgray;
+            }
+          }
+        
+
+        .product {
+            display: flex;
+            border-top: 1px solid rgb(0 0 0 / 0.2);
+            padding: .3rem .5rem;
+            align-items: center;
+
+            h3 {
+                color: #007185;
+                font-weight: 700;
+                font-size: 1em;
+                line-height: 20px;
+                margin: .3rem;
+                flex: 1;
+            }
+
+            img {
+                max-width: 3rem;
+                height: auto;
+                margin: .875rem;
+            }
+
+
+        }
+    }
+}
